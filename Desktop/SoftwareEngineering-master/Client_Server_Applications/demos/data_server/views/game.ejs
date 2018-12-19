@@ -23,13 +23,11 @@
           <option value="rock">Rock</option>
           <option value="scissors">Scissors</option>
         </select><br>
-        <button type = "submit" id="throw_choice_button">Throw Choice</button>
-        <img id="PlayerWaiting" src="images/player_waiting.png">
       </form>
       <form action="<%=user.name%>/results" method="get">
         Pick your opponent:<br>
 
-        <select name="opponent">
+        <select id="opponentDrop" name="opponentDrop">
           <option value=" "> </option>
           <option value="bones">Bones</option>
           <option value="comic_hans">Comic Hans</option>
@@ -44,13 +42,15 @@
           <option value="the_boss">The Boss</option>
           <option value="the_magician">The Magician</option>
         </select><br>
-        <button type = "submit" id="throw_choice_button">Throw Choice</button>
-        <img id="PlayerWaiting" src="images/player_waiting.png">
+        <button type = "submit" id="throw_choice_button">Submit</button>
+
+        <img id="PlayerWaiting" src="images/player_waiting.png" align="right">
+        <img id="bones_waiting" src="images/bones_waiting.svg" align="left" class="hidden">
       </form>
     </div>
   <footer>
     Brought to you by the cool kids of Software Engineering - Fall, 2018.
   </footer>
-  <script src="scripts/scripts.js"></script>
+  <script src="scripts/gameScripts.js"></script>
  </body>
 </html>
